@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+        }
+        header{
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+        }
+        header nav ul a{
+            color: inherit;
+            text-decoration: none;
+        }
+        header nav ul{
+            padding-left: 0;
+            display: flex;
+            gap: 1rem;
+            list-style-type: none;
+        }
+
+        .container{
+            padding: 1rem 0.75rem 1rem 0.75rem;
+        }
+        .project{
+            padding: 1rem;
+            margin-bottom: 1rem ;
+            border: 1px solid;
+        }
+        .text-red{
+            color:red;
+        }
+        .underline{
+            text-decoration: underline;
+        }
+        .font-bold{
+            font-weight: bold;
+        }
+        .capitalize{
+            text-transform: capitalize;
+        }
+        .action{
+            border: 2px solid red;
+        }
+        .tabs{
+            display: flex;
+            gap: 1rem;
+        }
+        .tabs p{
+            border: 1px solid;
+            padding: .5rem 1rem .5rem 1rem;
+            border-radius: .5rem;
+        }
+        .nav-links .action{
+            color:red;
+        }
+        .container .project.action{
+            border: 2px solid red;
+        }
+        .tab.action{
+            background-color: red;
+            background-color: rgb(255,0,0);
+            background-color: #f4cccc;
+            background: rgb(232, 240, 254);
+            color:rgb(25, 103, 210);
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="nav-links header">
+        <nav>
+            <ul>
+                <li class="action"><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+             <div class="project active">
+                <h2 class="text-red font-weight capitalize">git</h2>
+                <p>3days</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sed corrupti quis, molestias magni reprehenderit, expedita consequuntur perspiciatis esse aperiam a? Debitis libero porro unde velit vitae ex tenetur odit.</p>
+             </div>
+
+             <div class="project">
+                <h2>git</h2>
+                <p>3days</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sed corrupti quis, molestias magni reprehenderit, expedita consequuntur perspiciatis esse aperiam a? Debitis libero porro unde velit vitae ex tenetur odit.</p>
+             </div>
+
+             <div class="project">
+                <h2>git</h2>
+                <p>3days</p>
+                <p>Lorem <span class="underline font-bold text-red "> ipsum dolor sit amet consectetur adipisicing</span> elit. Cupiditate sed corrupti quis, molestias magni reprehenderit, expedita consequuntur perspiciatis esse aperiam a? Debitis libero porro unde velit vitae ex tenetur odit.</p>
+             </div>
+        </div>
+    </main>
+    
+    <ol>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ol>
+    <div class="tabs container">
+        <p  class="tab action">Images</p>
+        <p class="tab">Video</p>
+        <p class="tab">News</p>
+    </div>
+</body>
+</html>

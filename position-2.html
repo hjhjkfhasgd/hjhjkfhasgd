@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* .static{
+          position: static;   
+        } 
+        .relative{
+            position:relative ;
+        }
+        .absolute{
+        position: absolute;
+        }
+        .fixed{
+            
+        position:fixed ;
+        }
+        .sticky{
+        position:sticky ;
+        top: 0;
+            right: 0;
+        }  */
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+        }
+        .project{
+            height: 200px;
+            flex-grow: 1;
+            position: relative;
+        }
+        .projects{
+            gap: 2rem;
+            display: flex;
+            font-size: 2rem;
+            background-color: aqua;
+        }
+        .projects button{
+            border-radius: 999px;
+            border: none;
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            cursor: pointer;
+            position: absolute;
+            top: -25px;
+            right: -25px;
+        }
+        /* .project:nth-child(2){
+            flex-grow: 1;
+        }
+        .project:nth-child(1){
+            flex-grow: 2;
+        } */
+        header{
+            font-size: 3rem;
+            text-transform: capitalize;
+            background-color: #333;
+        }
+        header nav ol{
+            list-style-type: none;
+            display: flex;
+        }
+        header nav li a{
+            text-decoration: none;
+            color: white;
+            padding: 3rem;
+        }
+        header nav ol li a:hover{
+            color: red;
+        }
+        p{
+            font-size: 20px ;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ol>
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
+            </ol>
+        </nav>
+    </header>
+    <div class="box static">Static</div>
+    <div class="box relative">Relative</div>
+    <div class="box absolute">Absolute</div>
+    <div class="box fixed">Fixed</div>
+    <div class="box sticky">Sticky</div>
+    <hr>
+    <div class="projects">
+        <h1>Projects</h1>
+        <div class="project box">
+            projects1
+            <button>X</button>
+        </div>
+        <div class="project box">
+            projects2
+            <button>X</button>
+        </div>
+        <div class="project box">projects3</div>
+    </div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Atque eius ratione sint iusto quibusdam accusantium.
+         Sit dicta fugiat eaque, perspiciatis possimus amet beatae
+          sint porro consectetur voluptatibus placeat architecto ducimus?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Atque eius ratione sint iusto quibusdam accusantium.
+         Sit dicta fugiat eaque, perspiciatis possimus amet beatae
+          sint porro consectetur voluptatibus placeat architecto ducimus?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Atque eius ratione sint iusto quibusdam accusantium.
+         Sit dicta fugiat eaque, perspiciatis possimus amet beatae
+          sint porro consectetur voluptatibus placeat architecto ducimus?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Atque eius ratione sint iusto quibusdam accusantium.
+         Sit dicta fugiat eaque, perspiciatis possimus amet beatae
+          sint porro consectetur voluptatibus placeat architecto ducimus?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Atque eius ratione sint iusto quibusdam accusantium.
+         Sit dicta fugiat eaque, perspiciatis possimus amet beatae
+          sint porro consectetur voluptatibus placeat architecto ducimus?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Atque eius ratione sint iusto quibusdam accusantium.
+         Sit dicta fugiat eaque, perspiciatis possimus amet beatae
+          sint porro consectetur voluptatibus placeat architecto ducimus?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Atque eius ratione sint iusto quibusdam accusantium.
+         Sit dicta fugiat eaque, perspiciatis possimus amet beatae
+          sint porro consectetur voluptatibus placeat architecto ducimus?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Atque eius ratione sint iusto quibusdam accusantium.
+         Sit dicta fugiat eaque, perspiciatis possimus amet beatae
+          sint porro consectetur voluptatibus placeat architecto ducimus?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Atque eius ratione sint iusto quibusdam accusantium.
+         Sit dicta fugiat eaque, perspiciatis possimus amet beatae
+          sint porro consectetur voluptatibus placeat architecto ducimus?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Atque eius ratione sint iusto quibusdam accusantium.
+         Sit dicta fugiat eaque, perspiciatis possimus amet beatae
+          sint porro consectetur voluptatibus placeat architecto ducimus?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Atque eius ratione sint iusto quibusdam accusantium.
+         Sit dicta fugiat eaque, perspiciatis possimus amet beatae
+          sint porro consectetur voluptatibus placeat architecto ducimus?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Atque eius ratione sint iusto quibusdam accusantium.
+         Sit dicta fugiat eaque, perspiciatis possimus amet beatae
+          sint porro consectetur voluptatibus placeat architecto ducimus?</p>
+
+</body>
+</html>

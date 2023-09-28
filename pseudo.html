@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 200px;
+            border: 1px solid;
+            font-size:2rem;
+        }
+        .boxes :first-child{
+            background-color: blueviolet;
+        }
+        .box:last-child{
+            background-color:blueviolet;
+        }
+        .boxes :nth-child(3){
+            background-color: violet;
+        }
+        .boxes :nth-child(2){
+            background-color: cadetblue;
+        }
+        .boxes :nth-child(4){
+            background-color: yellowgreen;
+        }
+        .numbers :not(.first){
+            color: brown;
+        }
+        .boxes :not(:first-child){
+            color: seagreen;
+        }
+        header{
+            font-size: 2rem;
+            text-transform: capitalize;
+            background-color: #333;
+            color: white;
+            padding: sticky;
+        }
+        header nav ol{
+            list-style-type: none;
+            display: flex;
+        }
+        header nav li a{
+            color: white;
+            text-decoration: none;
+            padding: 2rem;
+        }
+        header nav ol li a:hover{
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ol>
+                <li><a href="">home</a></li>
+                <li><a href="">about</a></li>
+                <li><a href="">contact</a></li>
+            </ol>
+        </nav>
+    </header>
+    <div class="boxes">
+        <div class="box">box-1</div>
+        <div class="box">box-2</div>
+        <div class="box">box-3</div>
+        <div class="box">box-4</div>
+        <div class="box">box-5</div>
+    </div>
+    <ul class="numbers">
+        <li class="first">one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+        <li>five</li>
+    </ul>
+</body>
+</html>

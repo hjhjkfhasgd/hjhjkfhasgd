@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body h1{
+            color: black;
+        }
+        h1{
+            color: red;
+        }
+        h1{
+            color: aqua;
+        }
+        body .header {
+            color:red;
+        }
+        div .header{
+            background-color: blueviolet;
+        }
+        body .header{
+            background-color: yellow;
+        }
+        div{
+            background-color: red;
+        }
+        body div{
+            border: 1px solid;
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+        }
+        Body .box{
+            border: 1px solid;
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+        }
+        body div{
+            background-color: rgb(10, 6, 0);
+        }
+        div#one{
+            background-color:violet ;
+        }
+        #one{
+            background-color: orange;
+        }
+        body div#mero{
+            background-color: blueviolet;
+        }
+        div#mero{
+            background-color: blue;
+        }
+        #mero{
+            background-color: black;
+            color: aliceblue !important;
+            height: 100px;
+            width: 100px;
+        }
+        body div.hero#mero{
+            color: black;
+        }
+        body .hero#mero{
+            color: chartreuse;
+        }
+        html body div.hero#mero{
+            color: red !important;
+            background-color: black !important;
+        }
+        body div.hero.jero#mero{
+            background-color: teal;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 class="header" id="one">Specificity Score / css priority</h1>
+<div class="box">
+        <h2>box</h2>
+</div>
+<div class="hero jero" id="mero">
+    box
+</div>
+</body>
+</html>
